@@ -11,12 +11,14 @@ import { UserService } from 'src/app/services/user.service';
 export class CardviewComponent implements OnInit {
 
   usersData:any = []
+  name:any
+  
 
   public viewDatas = <any>[];
   data = <any>[];
 
   editForm = this.fb.group({
-    fname:["",[Validators.required,Validators.pattern('[A-Za-z ]*')]],
+    fname:[this.users.editFname,[Validators.required,Validators.pattern('[A-Za-z ]*')]],
     lname:["",[Validators.required,Validators.pattern('[A-Za-z ]*')]],
     email:["",[Validators.required,Validators.pattern('[A-Za-z0-9 ]*'),Validators.email]],
     city:["",[Validators.required,Validators.pattern('[A-Za-z0-9 ]*')]],
@@ -29,6 +31,8 @@ export class CardviewComponent implements OnInit {
 
   ngOnInit(): void {
     this.usersData = this.users.database
+    console.log("qwer",this.users.editFname);
+    
     // this.viewDatas = this.users.getDataById(this.id.id)
     // this.data.push(this.users.viewData)
   }
@@ -58,6 +62,15 @@ export class CardviewComponent implements OnInit {
 
     var newuser = {fname,lname,email,city,address}
     console.log(newuser);
+    
+  }
+
+  edituser(user:any){   
+    this.editForm.value.fname = user.fname
+    console.log(user);
+    this.users.editFname = user.fname;
+    console.log(this.users.editFname);
+    
     
   }
 

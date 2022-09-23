@@ -8,6 +8,12 @@ export class UserService {
   public viewData : any;
   newuser:any
 
+  editFname="";
+  editLname="";
+  editEmail="";
+  editCity="";
+  editAddress="";
+
   constructor() { }
 
   database:any = [

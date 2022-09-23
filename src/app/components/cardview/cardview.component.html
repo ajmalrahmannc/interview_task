@@ -3,7 +3,7 @@
     <div class="cards col-md-3" *ngFor="let user of usersData">
         <div class="card-header">
             <span>{{user.fname}}</span>
-            <img src="../../../assets/pencil-square.svg" alt="" (click)="openEnd(content)">
+            <img src="../../../assets/pencil-square.svg" alt="" (click)="edituser(user)" (click)="openEnd(content)">
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -30,7 +30,7 @@
         <form [formGroup]="editForm">
             <div class="fields">
                 <label for="">First Name:</label>
-                <input type="text" class="form-control" formControlName="fname">
+                <input type="text"  class="form-control" formControlName="fname">
                 <label for="">Last Name:</label>
                 <input type="text" class="form-control" formControlName="lname">
                 <label for="">Email:</label>
