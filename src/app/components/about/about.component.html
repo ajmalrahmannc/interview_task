@@ -1,0 +1,25 @@
+<div class="main row">
+    <div class="sub col-md-3">
+        <button class="btns" (click)="versions()">Version History</button>
+        <button class="btns" (click)="demos()">Demo</button>
+        <button class="btns" (click)="docs()">Documentation</button>
+        <button class="btns" (click)="pros()">Pro Vs Free</button>
+    </div>
+    <div *ngIf="version" class="col-md-9">
+        <h3>Version History</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil amet alias quae distinctio, ipsam, molestiae cum accusantium molestias ipsa cupiditate quaerat sapiente sunt tempora aliquam culpa et ab vitae!</p>
+    </div>
+    <div *ngIf="demo" class="col-md-9">
+        <h3>Demo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil amet alias quae distinctio, ipsam, molestiae cum accusantium molestias ipsa cupiditate quaerat sapiente sunt tempora aliquam culpa et ab vitae!</p>
+    </div>
+    <div *ngIf="documentation" class="col-md-9">
+        <h3>Documentation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil amet alias quae distinctio, ipsam, molestiae cum accusantium molestias ipsa cupiditate quaerat sapiente sunt tempora aliquam culpa et ab vitae!</p>
+    </div>
+    <div *ngIf="pro" class="col-md-9">
+        <h3>Pro Vs Free</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil amet alias quae distinctio, ipsam, molestiae cum accusantium molestias ipsa cupiditate quaerat sapiente sunt tempora aliquam culpa et ab vitae!</p>
+    </div>
+
+</div>

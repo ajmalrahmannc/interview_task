@@ -1,0 +1,25 @@
+.main{
+    border: 1px solid rgb(87, 87, 182);
+    width: 1000px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.sub{
+    height: 500px;
+    margin-top: 15px;
+    /* background-color: rgb(206, 206, 206); */
+}
+.btns{
+    width: 100%;
+    background-color: rgb(87, 87, 182);
+    background-size: cover;
+    margin: 1px;
+    border: none;
+    height: 50px;
+    color: white;
+}
+.btns:hover{
+    background-color: white;
+    color: rgb(87, 87, 182);
+}

@@ -1,0 +1,28 @@
+img{
+    height: 70px;
+    padding: 10px;
+}
+span{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+.main{
+    display: flex;
+    background-color: rgb(87, 87, 182);
+    height: 75px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    padding: 15px;
+}
+li button{
+    color: white;
+}
+li button:hover{
+    background-color: white;
+    color: rgb(87, 87, 182);
+}

@@ -1,0 +1,36 @@
+/* top section */
+.top-section{
+    padding: 10px;
+    margin-left: 20px;
+}
+.top-section img{
+    height: 60px;
+}
+.top-section span{
+    font-size: larger;
+}
+
+/* secound top */
+.seocond-top{
+    display: flex;
+    justify-content: space-between;
+}
+.first-part{
+    display: flex;
+}
+.first-part .items{
+    margin-top: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+
+/* template forms */
+.fields{
+    padding: 20px;
+}
+.form-btn{
+    margin-top: 50px;
+    margin-left: 50%;
+}
+

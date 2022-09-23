@@ -1,0 +1,29 @@
+/* user card */
+.cards{
+    padding: 30px;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(87, 87, 182);
+    color: white;
+}
+.card-header img{
+    cursor: pointer;
+}
+.userimg{
+    padding-top: 20px;
+}
+
+
+.details{
+    border: 1px solid black;
+}
+.details img{
+    height: 150px;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.details span{
+    font-weight: bold;
+}

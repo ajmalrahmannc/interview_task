@@ -1,0 +1,71 @@
+<!-- top section -->
+<div class="top-section">
+    <img src="../../../assets/male-user.png" alt="no image">
+    <span>Customers</span>
+</div>
+
+<!-- secound top -->
+<div class="seocond-top container">
+    <div class="first-part">
+        <div class="items" (click)="card()">
+            <i class="fa fa-th-large" aria-hidden="true"></i>
+            <span>Card View</span>
+        </div>
+        <div class="items" (click)="lists()">
+            <i class="fa fa-list" aria-hidden="true"></i>
+            <span>List View</span>
+        </div>
+        <div class="items" (click)="openEnd(content)">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            <span>New Customer</span>
+        </div>
+    </div>
+    <div class="secound-part">
+        <label>Filter:</label><br>
+        <input type="text" name="" id="">
+    </div>
+</div>
+
+<div *ngIf="grid">
+    <app-cardview></app-cardview>
+</div>
+
+<div *ngIf="list">
+    <app-listview></app-listview>
+</div>
+
+<!-- add customer template -->
+<ng-template #content let-offcanvas>
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title">Add New Customer</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+    </div>
+    <!-- <div class="offcanvas-body">
+      <p>One fine body&hellip;</p>
+      <div class="text-end">
+        <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
+      </div>
+    </div> -->
+    <div>
+        <form [formGroup]="addForm">
+            <div class="fields">
+                <label for="">First Name:</label>
+                <input type="text" class="form-control" formControlName="fname">
+                <label for="">Last Name:</label>
+                <input type="text" class="form-control" formControlName="lname">
+                <label for="">Email:</label>
+                <input type="text" class="form-control" formControlName="email">
+                <label for="">City:</label>
+                <input type="text" class="form-control" formControlName="city">
+                <label for="">Address</label>
+                <input type="text" class="form-control" formControlName="address">
+    
+                <div class="form-btn">
+                    <button (click)="add()" class="btn btn-success">Submit</button>&nbsp;
+                    <button class="btn btn-danger" (click)="offcanvas.close('Close click')">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+  </ng-template>
+  
