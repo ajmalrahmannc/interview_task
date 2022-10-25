@@ -9,6 +9,7 @@ import { UserService } from 'src/app/services/user.service';
 export class ListviewComponent implements OnInit {
 
   userDatas:any = []
+  page=1;
 
   constructor(private users:UserService) { }
 

@@ -12,6 +12,7 @@ export class CardviewComponent implements OnInit {
 
   usersData:any = []
   name:any
+  page = 1;
   
 
   public viewDatas = <any>[];

@@ -52,7 +52,9 @@ export class HomeComponent implements OnInit {
     console.log(this.user.newuser);
     console.log(this.user.database);
     alert("user added successfully..")
-    
+  }
+
+  handleSearchUsers(){
     
   }
 
